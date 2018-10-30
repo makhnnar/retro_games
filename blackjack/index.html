@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BlackJack 21</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+	<body>
+		<dialog id="Apuesta">
+			<p id="PujaInicial"></p>
+			Incrementar tu apuesta:<input id="IncrementarApuesta" type="" name="">
+			<button id="Jugar" onclick="iniciarJuego()">Aceptar</button>
+			<button id="Nojugar" onclick="NoJugar()">Negar</button>
+	   </dialog>
+		<dialog id="turno">
+			<p id="Escoge">Escoge cara o sello para escoger tu turno</p>
+			<button id="button2" onclick="Cara()">Cara</button>
+			<button id="button3" onclick="Sello()">Sello</button>
+		</dialog>
+		<dialog id="ApostarMas">
+			Incrementar tu apuesta:<input id="AumentarApuesta" type="" name="">
+			<button id="button2" onclick="aumentarApuesta()">Aceptar</button>
+			<button id="button6" onclick="rechazar()">Rechazar</button>
+		</dialog>
+		<div class="turno">
+			<p id="turnoJugador"></p>
+		</div>
+		<div class="infoapuesta">
+			<p id="DineroDisponible"></p> <p id="DineroApostado"></p> <p id="Monto a ganar"></p>
+		</div>	
+
+
+								<div id="body"></div>
+								<p id="CPU">CPU</p>
+			<p id="ver"></p>	<div id="body1"></div>
+								<p id="JUGADOR">JUGADOR</p>
+			<p id="ver1"></p>
+			
+		<div class="botones">
+			<button id="button1" onclick="pedirCartaPlayer()">Pedir Carta</button><button id="button1" onclick="NoPedirPlayer()">No Pedir Mas</button>
+			<button id="button1" onclick="PasarTurnoCPU()">Pasar turno CPU</button>
+			<button id="button1" onclick="incrementarApuesta()">Incrementar Apuesta</button>
+			<button id="button1" onclick="mostrar()">Mostrar Resultados</button>
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>
